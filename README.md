@@ -1,7 +1,7 @@
 Reporting Engine Test Reports
 ================
 Open System Pharmacology
-2024-03-18
+2024-03-25
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- 
@@ -12,9 +12,9 @@ file, context, test, nb, failed, skipped, error, warning, user, system, real, pa
 &#10;Turning the list to data.frame and extracting the relevant data will give a great overview of the test results
 -->
 
-| 📔 Total Reports | 🕵 Total Tests | 📊 Global Success Rate             |
-|------------------|---------------|------------------------------------|
-| 6                | 122           | ![](https://geps.dev/progress/100) |
+| 📔 Total Reports | 🕵 Total Tests | 📊 Global Success Rate            |
+|------------------|---------------|-----------------------------------|
+| 6                | 90            | ![](https://geps.dev/progress/73) |
 
 ## Using Reports and Scripts as template
 
@@ -43,7 +43,7 @@ currently available in this repository:
 |:---------------------------------------------------------------------|:------------------------------|:-------------------------------------------------------------------|----:|:-----------------------------------|:--------------|:-------------|
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   6 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
+| [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected Plots                | ![](https://img.shields.io/badge/%E2%9A%A0-Failed%20tests-red)     |   4 | ![](https://geps.dev/progress/0)   | 0%            | 100%         |
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected Sensitivity Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
@@ -51,7 +51,7 @@ currently available in this repository:
 | [Aciclovir-Mean](./tests/Reports/Aciclovir-Mean)                     | Expected PK Parameter Tables  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   6 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
+| [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected Plots                | ![](https://img.shields.io/badge/%E2%9A%A0-Failed%20tests-red)     |   4 | ![](https://geps.dev/progress/0)   | 0%            | 100%         |
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected Sensitivity Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
@@ -59,7 +59,7 @@ currently available in this repository:
 | [Aciclovir-Mean-SVG](./tests/Reports/Aciclovir-Mean-SVG)             | Expected PK Parameter Tables  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |  24 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
+| [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected Plots                | ![](https://img.shields.io/badge/%E2%9A%A0-Failed%20tests-red)     |  16 | ![](https://geps.dev/progress/0)   | 0%            | 100%         |
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected Sensitivity Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |  21 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
@@ -67,15 +67,12 @@ currently available in this repository:
 | [Aciclovir-Population](./tests/Reports/Aciclovir-Population)         | Expected PK Parameter Tables  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   8 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Absorption](./tests/Reports/Raltegravir-Absorption)     | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Absorption](./tests/Reports/Raltegravir-Absorption)     | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Raltegravir-Absorption](./tests/Reports/Raltegravir-Absorption)     | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Absorption](./tests/Reports/Raltegravir-Absorption)     | Expected Absorption Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Mass-Balance](./tests/Reports/Raltegravir-Mass-Balance) | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Mass-Balance](./tests/Reports/Raltegravir-Mass-Balance) | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Raltegravir-Mass-Balance](./tests/Reports/Raltegravir-Mass-Balance) | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |  10 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Raltegravir-Mass-Balance](./tests/Reports/Raltegravir-Mass-Balance) | Expected Mass Balance Results | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO7](./tests/Reports/Test-NO7)                                 | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO7](./tests/Reports/Test-NO7)                                 | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Test-NO7](./tests/Reports/Test-NO7)                                 | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   8 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO7](./tests/Reports/Test-NO7)                                 | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO7](./tests/Reports/Test-NO7)                                 | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO7](./tests/Reports/Test-NO7)                                 | Expected Goodness of Fit      | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
