@@ -1,7 +1,7 @@
 Reporting Engine Test Reports
 ================
 Open System Pharmacology
-2024-05-20
+2024-05-27
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- 
@@ -30,9 +30,9 @@ currently available in this repository:
 
 | Report                                                                   | Script                                                                     | Run Time |
 |:-------------------------------------------------------------------------|:---------------------------------------------------------------------------|:---------|
-| [Aciclovir-Mean](./Reports/Aciclovir-Mean/Report.md)                     | [report-aciclovir-mean-svg.R](./R/report-aciclovir-mean-svg.R)             | 0.6 min  |
-| [Aciclovir-Mean-SVG](./Reports/Aciclovir-Mean-SVG/Report.md)             | [report-aciclovir-mean-svg.R](./R/report-aciclovir-mean-svg.R)             | 0.9 min  |
-| [Aciclovir-Population](./Reports/Aciclovir-Population/Report.md)         | [report-aciclovir-population.R](./R/report-aciclovir-population.R)         | 9 min    |
+| [Aciclovir-Mean](./Reports/Aciclovir-Mean/Report.md)                     | [report-aciclovir-mean-svg.R](./R/report-aciclovir-mean-svg.R)             | 0.5 min  |
+| [Aciclovir-Mean-SVG](./Reports/Aciclovir-Mean-SVG/Report.md)             | [report-aciclovir-mean-svg.R](./R/report-aciclovir-mean-svg.R)             | 0.8 min  |
+| [Aciclovir-Population](./Reports/Aciclovir-Population/Report.md)         | [report-aciclovir-population.R](./R/report-aciclovir-population.R)         | 8.8 min  |
 | [Raltegravir-Absorption](./Reports/Raltegravir-Absorption/Report.md)     | [report-raltegravir-absorption.R](./R/report-raltegravir-absorption.R)     | 1 min    |
 | [Raltegravir-Mass-Balance](./Reports/Raltegravir-Mass-Balance/Report.md) | [report-raltegravir-mass-balance.R](./R/report-raltegravir-mass-balance.R) | 0.6 min  |
 | [Test-NO7](./Reports/Test-NO7/Report.md)                                 | [report-NO7.R](./R/report-NO7.R)                                           | 0.3 min  |
