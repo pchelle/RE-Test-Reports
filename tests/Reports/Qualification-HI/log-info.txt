@@ -1,0 +1,67 @@
+03/07/2024 - 09:16:51
+Loading Simulations onto Qualification Workflow
+03/07/2024 - 09:17:08
+Simulations loading completed in 0.3 min
+03/07/2024 - 09:17:08
+Reporting Engine Information:
+Date: 03/07/2024 - 09:17:08
+User Information:
+Computer Name: fv-az534-542
+User: runneradmin
+Login: runneradmin
+System is NOT validated
+System versions:
+R version: R version 4.4.1 (2024-06-14 ucrt)
+OSP Suite Package version: 12.0.1088
+OSP Reporting Engine version: 2.2.347
+tlf version: 1.5.168
+03/07/2024 - 09:17:08
+Starting run of Qualification Workflow
+03/07/2024 - 09:17:08
+Starting run of Simulation task
+03/07/2024 - 09:17:08
+Starting run of Population Simulations
+03/07/2024 - 09:17:08
+Starting run of Alfentanil-Ferrier1985 Child Pugh B (Ferrier1985 Child Pugh B-Population)
+03/07/2024 - 09:17:14
+Starting run of Alfentanil-Ferrier1985 Child Pugh C (Ferrier1985 Child Pugh C-Population)
+03/07/2024 - 09:17:20
+Starting run of Levetiracetam-Brockmoller2005_CPA_Population (Brockmoller2005_CPA_Population-Population)
+03/07/2024 - 09:17:33
+Starting run of Levetiracetam-Brockmoller2005_CPB_Population (Brockmoller2005_CPB_Population-Population)
+03/07/2024 - 09:17:47
+Starting run of Levetiracetam-Brockmoller2005_CPC_Population (Brockmoller2005_CPC_Population-Population)
+03/07/2024 - 09:18:02
+Starting run of Metoprolol-Regardh1981_CPA_PO_Population (Regardh1981_CPA_PO_Population-Population)
+03/07/2024 - 09:18:23
+Starting run of Metoprolol-Regardh1981_CPB_PO_Population (Regardh1981_CPB_PO_Population-Population)
+03/07/2024 - 09:18:45
+Starting run of Midazolam-Macgilchrist1986_CPA_Population (Macgilchrist1986_CPA_Population-Population)
+03/07/2024 - 09:19:01
+Starting run of Midazolam-Macgilchrist1986_CPB_Population (Macgilchrist1986_CPB_Population-Population)
+03/07/2024 - 09:19:17
+Starting run of Midazolam-Macgilchrist1986_CPC_Population (Macgilchrist1986_CPC_Population-Population)
+03/07/2024 - 09:19:35
+Starting run of Midazolam-Pentikainen1989_IV_CPB_Population (Pentikainen1989_IV_CPB_Population-Population)
+03/07/2024 - 09:19:54
+Starting run of Midazolam-Pentikainen1989_IV_CPC_Population (Pentikainen1989_IV_CPC_Population-Population)
+03/07/2024 - 09:20:13
+Starting run of Midazolam-Pentikanen1889_PO_CPB_Population (Pentikanen1889_PO_CPB_Population-Population)
+03/07/2024 - 09:20:31
+Starting run of Midazolam-Pentikanen1889_PO_CPC_Population (Pentikanen1889_PO_CPC_Population-Population)
+03/07/2024 - 09:20:51
+Starting run of Sildenafil-Muirhead2002_CPA_Population (Muirhead2002_CPA_Population-Population)
+03/07/2024 - 09:21:06
+Starting run of Sildenafil-Muirhead2002_CPB_Population (Muirhead2002_CPB_Population-Population)
+03/07/2024 - 09:21:20
+Starting run of Lidocaine-Orlando2003_CPA_Population (Orlando2003_CPA_Population-Population)
+03/07/2024 - 09:21:28
+Starting run of Lidocaine-Orlando2003_CPC_Population (Orlando2003_CPC_Population-Population)
+03/07/2024 - 09:21:36
+Simulation task completed in 4.5 min
+03/07/2024 - 09:21:36
+Starting run of Plot Time Profiles task
+03/07/2024 - 09:22:55
+Plot Time Profiles task completed in 1.3 min
+03/07/2024 - 09:22:55
+Qualification Workflow completed in 5.8 min
