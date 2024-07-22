@@ -1,7 +1,7 @@
 Reporting Engine Test Reports
 ================
 Open System Pharmacology
-2024-07-15
+2024-07-22
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- 
@@ -12,9 +12,9 @@ file, context, test, nb, failed, skipped, error, warning, user, system, real, pa
 &#10;Turning the list to data.frame and extracting the relevant data will give a great overview of the test results
 -->
 
-| 📔 Total Reports | 🕵 Total Tests | 📊 Global Success Rate             |
-|------------------|---------------|------------------------------------|
-| 12               | 634           | ![](https://geps.dev/progress/100) |
+| 📔 Total Reports | 🕵 Total Tests | 📊 Global Success Rate            |
+|------------------|---------------|-----------------------------------|
+| 12               | 634           | ![](https://geps.dev/progress/98) |
 
 ## Test Infrastructure
 
@@ -44,7 +44,7 @@ Click to expand
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ## [1] RE-Test-Reports_0.0.0.9000       ospsuite.reportingengine_2.2.352
+    ## [1] RE-Test-Reports_0.0.0.9000       ospsuite.reportingengine_2.2.354
     ## [3] tlf_1.5.168                      ospsuite_12.0.1088              
     ## [5] rSharp_1.0.0                     testthat_3.2.1.1                
     ## [7] dplyr_1.1.4                     
@@ -64,7 +64,7 @@ Click to expand
     ## [34] rprojroot_2.0.4       fastmap_1.2.0         grid_4.4.1           
     ## [37] colorspace_2.1-0      cli_3.6.3             magrittr_2.0.3       
     ## [40] pkgbuild_1.4.4        utf8_1.2.4            readr_2.1.5          
-    ## [43] withr_3.0.0           waldo_0.5.2           ospsuite.utils_1.5.33
+    ## [43] withr_3.0.0           waldo_0.5.2           ospsuite.utils_1.5.34
     ## [46] scales_1.3.0          bit64_4.0.5           rmarkdown_2.27       
     ## [49] bit_4.0.5             ggtext_0.1.2          png_0.1-8            
     ## [52] hms_1.1.3             evaluate_0.24.0       knitr_1.48           
@@ -168,14 +168,14 @@ currently available in this repository:
 | [Test-NO10](./tests/Reports/Test-NO10)                               | Expected PK Parameter Tables  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |  12 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Test-NO11](./tests/Reports/Test-NO11)                               | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   8 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
+| [Test-NO11](./tests/Reports/Test-NO11)                               | Expected Plots                | ![](https://img.shields.io/badge/%E2%9A%A0-Failed%20tests-red)     |   8 | ![](https://geps.dev/progress/50)  | 0%            | 50%          |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Expected Goodness of Fit      | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO11](./tests/Reports/Test-NO11)                               | Expected PK Parameter Tables  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO12](./tests/Reports/Test-NO12)                               | Expected Files                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO12](./tests/Reports/Test-NO12)                               | Content of Report             | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
-| [Test-NO12](./tests/Reports/Test-NO12)                               | Expected Plots                | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |  14 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
+| [Test-NO12](./tests/Reports/Test-NO12)                               | Expected Plots                | ![](https://img.shields.io/badge/%E2%9A%A0-Failed%20tests-red)     |  14 | ![](https://geps.dev/progress/71)  | 0%            | 29%          |
 | [Test-NO12](./tests/Reports/Test-NO12)                               | Expected Simulation Results   | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO12](./tests/Reports/Test-NO12)                               | Expected PK Analysis Results  | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   1 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
 | [Test-NO12](./tests/Reports/Test-NO12)                               | Expected Goodness of Fit      | ![](https://img.shields.io/badge/%E2%9C%93-Passed%20tests-success) |   2 | ![](https://geps.dev/progress/100) | 0%            | 0%           |
