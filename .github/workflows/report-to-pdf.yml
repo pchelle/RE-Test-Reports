@@ -48,8 +48,7 @@ jobs:
         with:
           add: |
             - ${{ matrix.file }}.pdf
-          push: true
-          pull: '--rebase'
+          push: false
 
   export-reports:
     runs-on: ubuntu-latest
