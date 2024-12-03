@@ -4,11 +4,27 @@ on:
   workflow_dispatch:
   
 jobs:
+  get-reports:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    outputs: 
+      file: ${{ steps.set-files.outputs.file }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - id: set-files
+      run: echo "::set-output name=file::$(ls ./Reports/*/Report.md | jq -R -s -c 'split("\n")[:-1]')"
+      
   report-to-pdf:
     runs-on: ubuntu-latest
+    needs: get-reports
     # Allow only authorized collaborators to trigger GA:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      matrix:
+        file: ${{ fromJson(needs.get-reports.outputs.file) }}  
 # All steps in workflow:
     steps:
       - name: Checkout
@@ -17,17 +33,16 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v2
       - name: Perform html conversion with pandoc
         run: |
-          for file in $(find . -name "*.md"); do
-            pandoc -f markdown -t html5 --embed-resources --standalone \
-            -o ${file%.md}.html $file -c osp.css
+          pandoc -f markdown -t html5 --embed-resources --standalone \
+            -o ${{ matrix.file%.md }}.html ${{ matrix.file }} -c osp.css
           done
         
       # Run the HTML to PDF converter action
       - name: HTML website to PDF converter
         uses: fifsky/html-to-pdf-action@master
         with:
-          htmlFile: ./Reports/*/Report.html
-          outputFile: ./Reports/*/Report.pdf
+          htmlFile: ${{ matrix.file%.md }}.html
+          outputFile: ${{ matrix.file%.md }}.pdf
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": true, "headerTemplate": "<span></span>", "footerTemplate": "<span style=\"font-size: 12px;\">&emsp;&emsp;Page <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></span>"}'
           
       - name: Save PDF file as artifacts
@@ -35,3 +50,4 @@ jobs:
         with:
           name: reports-pdf
           path: ./Reports
+
