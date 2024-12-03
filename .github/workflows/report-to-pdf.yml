@@ -14,7 +14,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - id: set-files
-      run: echo "::set-output name=file::$(ls ./Reports/*/Report.md | jq -R -s -c 'split("\n")[:-1]')"
+      run: echo "::set-output name=file::$(ls ./Reports/*/Report.md | sed 's/\.md$//' | jq -R -s -c 'split("\n")[:-1]')"
       
   report-to-pdf:
     runs-on: ubuntu-latest
@@ -34,15 +34,15 @@ jobs:
       - name: Perform html conversion with pandoc
         run: |
           pandoc -f markdown -t html5 --embed-resources --standalone \
-            -o $ sed '${{ matrix.file }}/.md/.html/' ${{ matrix.file }} -c osp.css
+            -o ${{ matrix.file }}.html ${{ matrix.file }}.md -c osp.css
           done
         
       # Run the HTML to PDF converter action
       - name: HTML website to PDF converter
         uses: fifsky/html-to-pdf-action@master
         with:
-          htmlFile: $ sed '${{ matrix.file }}/.md/.html/'
-          outputFile: $ sed '${{ matrix.file }}/.md/.pdf/'
+          htmlFile: ${{ matrix.file }}.html
+          outputFile: ${{ matrix.file }}.pdf
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": true, "headerTemplate": "<span></span>", "footerTemplate": "<span style=\"font-size: 12px;\">&emsp;&emsp;Page <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></span>"}'
           
       - name: Save PDF file as artifacts
