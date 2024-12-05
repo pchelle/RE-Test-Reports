@@ -2,65 +2,35 @@ name: Convert Report to PDF
 
 on:
   workflow_dispatch:
+    inputs:
+      report:
+        description: 'Report to update'
+        required: true
+        type: choice
+        options:
+        - Aciclovir-Mean
+        - Aciclovir-Mean-SVG
   
 jobs:
-  get-reports:
-    runs-on: ubuntu-latest
+  convert:
+    runs-on: windows-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    outputs: 
-      file: ${{ steps.set-files.outputs.file }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - id: set-files
-      run: echo "::set-output name=file::$(ls ./Reports/*/Report.md | sed 's/\.md$//' | jq -R -s -c 'split("\n")[:-1]')"
-      
-  report-to-pdf:
-    runs-on: ubuntu-latest
-    needs: get-reports
-    # Allow only authorized collaborators to trigger GA:
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    strategy:
-      matrix:
-        file: ${{ fromJson(needs.get-reports.outputs.file) }}  
-# All steps in workflow:
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install Pandoc
-        uses: r-lib/actions/setup-pandoc@v2
-      - name: Perform html conversion with pandoc
-        run: |
-          pandoc -f markdown -t html5 --embed-resources --standalone \
-            -o ${{ matrix.file }}.html ${{ matrix.file }}.md -c osp.css
-        
-      # Run the HTML to PDF converter action
-      - name: HTML website to PDF converter
-        uses: fifsky/html-to-pdf-action@master
-        with:
-          htmlFile: ${{ matrix.file }}.html
-          outputFile: ${{ matrix.file }}.pdf
-          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": true, "headerTemplate": "<span></span>", "footerTemplate": "<span style=\"font-size: 12px;\">&emsp;&emsp;Page <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></span>"}'
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: |
-            - ${{ matrix.file }}.pdf
-          push: false
-
-  export-reports:
-    runs-on: ubuntu-latest
-    needs: report-to-pdf
-    # Allow only authorized collaborators to trigger GA:
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Save PDF file as artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: reports-pdf
-          path: ./Reports
+    - name: install pagedjs
+      run: |
+        npm install -g pagedjs-cli
+    - name: Install Pandoc
+      uses: r-lib/actions/setup-pandoc@v2
+    - name: Perform html conversion with pandoc
+      run: |
+        pandoc -f markdown -t html5 --embed-resources --standalone \
+          --pdf-engine=pagedjs-cli \
+          -o Reports/${{ inputs.report }}/Report.pdf Reports/${{ inputs.report }}/Report.md -c osp.css
+    - name: Save PDF file as artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.report }}-pdf
+        path: ./Reports/${{ inputs.report }}
