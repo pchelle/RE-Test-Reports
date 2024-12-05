@@ -42,7 +42,7 @@ jobs:
         "--format A4", "--marginTop 10mm", "--marginBottom 10mm", "--marginLeft 10mm", "--marginRight 10mm",
         '--headerTemplate "<span></span>"',
         #'--footerTemplate "<span>Page <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></span>"',
-        '"Reports/${{ inputs.report }}/Report.html"'
+        paste0('"', normalizePath("Reports/${{ inputs.report }}/Report.html"), '"')
         ))
       shell: Rscript {0}
     - name: Save PDF file as artifacts
