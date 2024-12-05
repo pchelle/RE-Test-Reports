@@ -37,7 +37,7 @@ jobs:
         writeLines(c("embed-resources:", "standalone:", "css: osp.css", "o: Reports/${{ inputs.report }}/Report.html"), "config.txt")
         knitr::pandoc("Reports/${{ inputs.report }}/Report.md", format = "html", config = "config.txt")
         system(paste('chromehtml2pdf',
-        "--out=Report.pdf",
+        paste0('--out="', normalizePath("Reports/${{ inputs.report }}/Report.pdf", mustWork = FALSE), '"'),
         "--displayHeaderFooter true",
         "--format A4", "--marginTop 10mm", "--marginBottom 10mm", "--marginLeft 10mm", "--marginRight 10mm",
         '--headerTemplate "<span></span>"',
