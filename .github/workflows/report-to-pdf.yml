@@ -30,11 +30,13 @@ jobs:
       uses: r-lib/actions/setup-pandoc@v2
     - name: Install knitr
       run: |
-        R -e 'install.packages("knitr")'
+        install.packages("knitr")
+      shell: Rscript {0}  
     - name: Perform html conversion with pandoc
       run: |
-        R -e 'writeLines(c("embed-resources:", "standalone:", "css: osp.css", "o: Reports/${{ inputs.report }}/Report.html", "pdf-engine: pagedjs-cli"), "config.txt")'
-        R -e 'knitr::pandoc("Reports/${{ inputs.report }}/Report.md", format = "pdf", config = "config.txt")'
+        writeLines(c("embed-resources:", "standalone:", "css: osp.css", "o: Reports/${{ inputs.report }}/Report.html", "pdf-engine: pagedjs-cli"), "config.txt")
+        knitr::pandoc("Reports/${{ inputs.report }}/Report.md", format = "pdf", config = "config.txt")
+      shell: Rscript {0}
     - name: Save PDF file as artifacts
       uses: actions/upload-artifact@v4
       with:
