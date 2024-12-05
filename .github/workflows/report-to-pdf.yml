@@ -34,7 +34,7 @@ jobs:
       shell: Rscript {0}  
     - name: Perform html conversion with pandoc
       run: |
-        writeLines(c("embed-resources:", "standalone:", "css: osp.css", "o: Reports/${{ inputs.report }}/Report.html", "pdf-engine: pagedjs-cli"), "config.txt")
+        writeLines(c("embed-resources:", "standalone:", "css: osp.css", "o: Reports/${{ inputs.report }}/Report.html", "pdf-engine: \"D:\a\_temp\Library\AppData\Roaming\npm\pagedjs-cli.cmd\""), "config.txt")
         knitr::pandoc("Reports/${{ inputs.report }}/Report.md", format = "pdf", config = "config.txt")
       shell: Rscript {0}
     - name: Save PDF file as artifacts
