@@ -1,12 +1,12 @@
-24/03/2025 - 08:29:57
+24/03/2025 - 14:25:19
 Loading Simulations onto Qualification Workflow
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Simulations loading completed in 0.3 min
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Reporting Engine Information:
-Date: 24/03/2025 - 08:30:16
+Date: 24/03/2025 - 14:25:38
 User Information:
-Computer Name: fv-az653-905
+Computer Name: fv-az586-341
 User: runneradmin
 Login: runneradmin
 System is NOT validated
@@ -15,23 +15,23 @@ R version: R version 4.4.3 (2025-02-28 ucrt)
 OSP Suite Package version: 12.2.0.9011
 OSP Reporting Engine version: 2.3.0
 tlf version: 1.6.0
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Starting run of Qualification Workflow
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Starting run of Simulation task
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Splitting simulations for parallel run: 22 simulations split into 4 subsets
-24/03/2025 - 08:30:16
+24/03/2025 - 14:25:38
 Starting run of subset simulations
-24/03/2025 - 08:31:12
+24/03/2025 - 14:26:34
 Simulation task completed in 0.9 min
-24/03/2025 - 08:31:12
+24/03/2025 - 14:26:34
 Starting run of Plot Merged Goodness of Fit task
-24/03/2025 - 08:31:36
+24/03/2025 - 14:26:57
 Plot Merged Goodness of Fit task completed in 0.4 min
-24/03/2025 - 08:31:36
+24/03/2025 - 14:26:57
 Starting run of Plot Time Profiles task
-24/03/2025 - 08:41:43
-Plot Time Profiles task completed in 10.1 min
-24/03/2025 - 08:41:44
-Qualification Workflow completed in 11.5 min
+24/03/2025 - 14:36:54
+Plot Time Profiles task completed in 9.9 min
+24/03/2025 - 14:36:55
+Qualification Workflow completed in 11.3 min
