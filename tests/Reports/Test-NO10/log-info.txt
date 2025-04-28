@@ -1,59 +1,59 @@
-07/04/2025 - 00:20:59
+28/04/2025 - 00:20:14
 Reporting Engine Information:
-Date: 07/04/2025 - 00:20:59
+Date: 28/04/2025 - 00:20:14
 User Information:
-Computer Name: fv-az1258-789
+Computer Name: fv-az586-520
 User: runneradmin
 Login: runneradmin
 System is NOT validated
 System versions:
-R version: R version 4.4.3 (2025-02-28 ucrt)
-OSP Suite Package version: 12.2.0.9011
-OSP Reporting Engine version: 2.3.0
+R version: R version 4.5.0 (2025-04-11 ucrt)
+OSP Suite Package version: 12.2.0.9014
+OSP Reporting Engine version: 2.3.0.9002
 tlf version: 1.6.0
-07/04/2025 - 00:21:00
+28/04/2025 - 00:20:14
 Starting run of Population Workflow for pediatric
-07/04/2025 - 00:21:00
+28/04/2025 - 00:20:14
 Starting run of Simulation task
-07/04/2025 - 00:21:00
+28/04/2025 - 00:20:14
 Starting run of Population Simulations
-07/04/2025 - 00:21:01
+28/04/2025 - 00:20:16
 Starting run of single IV administration (adult)
-07/04/2025 - 00:21:09
+28/04/2025 - 00:20:23
 Starting run of children_0_3y (0-3y)
-07/04/2025 - 00:21:15
+28/04/2025 - 00:20:29
 Starting run of children_3_6y (3-6y)
-07/04/2025 - 00:21:21
+28/04/2025 - 00:20:35
 Starting run of children_6_9y (6-9y)
-07/04/2025 - 00:21:27
-Simulation task completed in 0.5 min
-07/04/2025 - 00:21:27
+28/04/2025 - 00:20:40
+Simulation task completed in 0.4 min
+28/04/2025 - 00:20:40
 Starting run of Calculate PK Parameters task
-07/04/2025 - 00:21:27
+28/04/2025 - 00:20:40
 Starting run of Calculate PK Parameters task for single IV administration
-07/04/2025 - 00:21:28
+28/04/2025 - 00:20:42
 Starting run of Calculate PK Parameters task for children_0_3y
-07/04/2025 - 00:21:30
+28/04/2025 - 00:20:43
 Starting run of Calculate PK Parameters task for children_3_6y
-07/04/2025 - 00:21:31
+28/04/2025 - 00:20:44
 Starting run of Calculate PK Parameters task for children_6_9y
-07/04/2025 - 00:21:32
+28/04/2025 - 00:20:46
 Calculate PK Parameters task completed in 0.1 min
-07/04/2025 - 00:21:32
+28/04/2025 - 00:20:46
 Starting run of Plot PK Parameters task
-07/04/2025 - 00:25:38
-Plot PK Parameters task completed in 4.1 min
-07/04/2025 - 00:25:38
+28/04/2025 - 00:24:58
+Plot PK Parameters task completed in 4.2 min
+28/04/2025 - 00:24:58
 Starting run of Plot Time profiles and Residuals task
-07/04/2025 - 00:25:38
+28/04/2025 - 00:24:58
 Starting run of Plot Time profiles and Residuals task for single IV administration
-07/04/2025 - 00:25:41
+28/04/2025 - 00:25:01
 Starting run of Plot Time profiles and Residuals task for children_0_3y
-07/04/2025 - 00:25:45
+28/04/2025 - 00:25:04
 Starting run of Plot Time profiles and Residuals task for children_3_6y
-07/04/2025 - 00:25:48
+28/04/2025 - 00:25:08
 Starting run of Plot Time profiles and Residuals task for children_6_9y
-07/04/2025 - 00:25:52
+28/04/2025 - 00:25:11
 Plot Time profiles and Residuals task completed in 0.2 min
-07/04/2025 - 00:25:54
-Population Workflow for pediatric completed in 4.9 min
+28/04/2025 - 00:25:13
+Population Workflow for pediatric completed in 5 min
